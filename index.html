@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#15382e"><meta name="description" content="Espace d'évaluation du Cèdre">
+<title>LE CÈDRE — Quiz d’informatique — Leçon 1 : Le logiciel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"><script src="config.js" defer></script><script src="script.js" defer></script>
+</head><body>
+<header class="header"><a class="brand" href="#"><span class="logo">♧</span><span><b>LE CÈDRE</b><small>ÉCOLE · APPRENDRE ET GRANDIR</small></span></a><span class="header-tag"><i></i> QUIZ D’INFORMATIQUE</span></header>
+<main class="shell">
+<section id="welcome" class="view active">
+ <div class="hero">
+  <div class="hero-copy"><div class="eyebrow">LE CÈDRE · CE1</div><h1>Quiz d’<em>informatique.</em></h1><p class="lead">Leçon 1 : <strong>Le logiciel</strong>. Lis chaque question attentivement et choisis la bonne réponse.</p>
+  <div class="facts"><div><span class="fact-icon">◷</span><span><b>30 minutes</b><small>Temps imparti</small></span></div><i></i><div><span class="fact-icon">▤</span><span><b>20 questions</b><small>Note sur 20</small></span></div></div></div>
+  <div class="art"><div class="orbit"></div><div class="art-card"><div class="art-card-head"><span class="mini-logo">C.</span><small>LE CÈDRE · CE1</small><span>•••</span></div><svg viewBox="0 0 180 180" aria-label="Illustration d'un réseau connecté"><g stroke="#c9b37e" stroke-width="1.5" fill="none"><path d="M90 90 44 48M90 90 137 44M90 90 143 123M90 90 44 137M44 48 137 44M44 137 143 123"/></g><g fill="#e5d3a6"><circle cx="90" cy="90" r="17"/><circle cx="44" cy="48" r="9"/><circle cx="137" cy="44" r="9"/><circle cx="143" cy="123" r="9"/><circle cx="44" cy="137" r="9"/></g><g fill="#173b30"><rect x="82" y="82" width="16" height="16" rx="4"/><rect x="39" y="43" width="10" height="10" rx="2"/><rect x="132" y="39" width="10" height="10" rx="2"/><rect x="138" y="118" width="10" height="10" rx="2"/><rect x="39" y="132" width="10" height="10" rx="2"/></g></svg><div class="art-caption"><small>INFORMATIQUE · CE1</small><b>Comprendre le logiciel.</b></div></div><div class="float-chip chip-top">✦ Votre potentiel, sans limite</div><div class="float-chip chip-bottom">✓ Évaluation interactive</div></div>
+ </div>
+ <div class="entry-card"><div class="entry-head"><div><span class="kicker">AVANT DE COMMENCER</span><h2>Identifiez-vous</h2><p>Saisissez votre identité pour accéder au questionnaire.</p></div><span class="step">01 <small>/ 02</small></span></div>
+ <form id="identity-form"><div class="fields"><div><label for="first">Prénom</label><input id="first" maxlength="80" placeholder="Ex. : Grâce" autocomplete="given-name" required><small>Votre prénom usuel</small></div><div><label for="last">Nom</label><input id="last" maxlength="80" placeholder="Ex. : Mavoungou" autocomplete="family-name" required><small>Votre nom de famille</small></div></div><p id="identity-error" class="error" hidden></p><div class="entry-bottom"><p>◇ Vos informations servent à identifier votre copie.</p><button class="btn primary" type="submit">Accéder au quiz <span>→</span></button></div></form></div>
+ <div class="under"><b>LE CÈDRE</b><span>Curiosité · Rigueur · Réussite</span><span>01 — 02</span></div>
+</section>
+
+<section id="quiz" class="view">
+ <div class="quiz-heading"><div><div class="eyebrow">ÉVALUATION EN COURS</div><h1>Leçon 1 : <em>Le logiciel</em></h1><p id="candidate-label"></p></div><div class="timer" id="timer-card"><small>TEMPS RESTANT</small><strong id="timer">30:00</strong><div class="timer-track"><i id="timer-bar"></i></div></div></div>
+ <div class="progress-meta"><b id="progress-label">QUESTION 01 / 20</b><span id="answered-label">0 réponse sur 20</span></div><div class="progress"><i id="progress-bar"></i></div>
+ <div class="quiz-layout"><aside class="rail"><small>VOTRE PARCOURS</small><div id="question-grid" class="question-grid"></div><p class="rail-tip">✦ <span><b>Un conseil</b><br>Relisez chaque proposition avant de valider votre choix.</span></p></aside>
+ <section class="question-card"><div class="question-tag">QUESTION <b id="question-number">01</b><span>Choix unique</span></div><h2 id="question-text"></h2><p class="muted">Sélectionnez la proposition qui vous semble correcte.</p><form id="answer-form"><div id="answer-list" class="answer-list"></div><p id="answer-error" class="error" hidden></p><div class="actions"><button class="btn ghost" id="previous" type="button">← Précédente</button><button class="btn primary" id="next" type="submit">Valider et continuer <span>→</span></button></div></form></section></div>
+ <p class="quiz-note">◇ 20 questions · 30 minutes · Note sur 20. Ne fermez pas votre navigateur avant la fin.</p>
+</section>
+
+<section id="result" class="view">
+ <div class="result-intro"><div class="result-check">✓</div><div class="eyebrow">ÉVALUATION TERMINÉE</div><h1 id="result-title">Bravo pour votre <em>effort.</em></h1><p id="result-subtitle">Voici le bilan de votre évaluation.</p></div>
+ <div class="result-card"><div class="person"><span id="avatar" class="avatar">C</span><div><small class="kicker">COPIE DE</small><h2 id="result-name"></h2><p>Le Cèdre · CE1 · Leçon 1 : Le logiciel</p></div><span class="pill">● Terminée</span></div>
+ <div class="score-row"><div><small class="kicker">VOTRE NOTE</small><div id="score" class="score">—<small>/5</small></div><p id="score-remark">Résultat de l’évaluation</p></div><div class="ring" id="ring"><div><b id="percent">0%</b><small>de réussite</small></div></div></div>
+ <div class="stats"><div><b id="correct-count">0</b><small>Bonnes réponses</small></div><div><b id="wrong-count">0</b><small>Incorrectes / sans réponse</small></div><div><b id="elapsed">—</b><small>Temps utilisé</small></div></div>
+ <div id="email-notice" class="email-notice"><span>✉</span><p id="email-status">Préparation du bilan…</p></div>
+ <div class="result-actions"><button id="show-correction" class="btn primary" type="button">Consulter la correction ↓</button><button id="print" class="btn ghost" type="button">Imprimer le bilan ↗</button></div></div>
+ <section id="correction-section" class="correction-section" hidden><div class="correction-head"><div><small class="kicker">POUR PROGRESSER</small><h2>Correction détaillée</h2><p>Vos choix, les réponses attendues et les explications.</p></div><span id="correction-count"></span></div><div id="correction-list"></div></section>
+ <div class="under result-under"><b>LE CÈDRE</b><span>Chaque progrès compte.</span><button id="new-candidate">Nouvelle évaluation ↗</button></div>
+</section>
+</main>
+<footer><span>© <span id="year"></span> LE CÈDRE</span><span>ESPACE D’ÉVALUATION NUMÉRIQUE</span><span>Fait pour apprendre.</span></footer>
+</body></html>
